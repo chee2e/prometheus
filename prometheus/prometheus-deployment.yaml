@@ -14,7 +14,7 @@ spec:
         app: prometheus-server
     spec:
       nodeSelector:
-        node: ops
+        kubernetes.io/hostname: gke-kf-cluster-01-ops-pool20221207073-7a46cecc-fffx
       containers:
         - name: prometheus
           image: prom/prometheus:latest
